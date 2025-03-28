@@ -1,14 +1,14 @@
 //your JS code here. If required.
 
 let isLoggedIn = false;
+let submitBtn = document.getElementById("submit");
+let existingBtn = document.getElementById("existing");
 
 document.getElementById("submit").addEventListener("click", (e)=>{
 	 e.preventDefault();
     let usernameInput = document.getElementById("username").value;
     let passwordInput = document.getElementById("password").value;
     let checkboxInput = document.getElementById("checkbox").checked;
-	let submitBtn = document.getElementById("submit");
-	let existingBtn = document.getElementById("existing");
 
     alert(`Logged in as ${usernameInput}`);
 
@@ -24,6 +24,10 @@ document.getElementById("submit").addEventListener("click", (e)=>{
     } else {
         localStorage.removeItem("user");
     }
+})
+
+existingBtn.addEventListener("click", () => {
+	alert("Logged in as")
 })
 
 
