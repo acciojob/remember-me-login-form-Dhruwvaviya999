@@ -1,1 +1,23 @@
 /*  your css code here. If applicable */
+#password, #username{
+	width:300px;
+	height:25px
+}
+
+h1{
+	text-align:center;
+	width:320px;
+}
+
+#existing{
+	width:160px;
+	height:30px;
+	border-radius:5px;
+	display:none;
+}
+
+#submit{
+	width:120px;
+	height:30px;
+	border-radius:5px;
+}
